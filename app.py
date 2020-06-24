@@ -24,7 +24,7 @@ def index():
         email = data['email']
     try:
         msg = Message('Hello customer care', sender = 'doep40077@gmail.com', recipients = ['martinkatamba@gmail.com', email])
-        msg.body = "This is %s \n and i would like agro-chemicals at a price of %s" % (name, price)
+        msg.body = "This is %s \n and i would like agro-chemicals at a price of %s ugx" % (name, price)
         mail.send(msg)
         return jsonify({"message":"Your email has been Sent"})
     except Exception as e:
