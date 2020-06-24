@@ -28,3 +28,7 @@ Then, go to http://127.0.0.1:5000/
 ## To send an email, run 
 `http://127.0.0.1:5000/sendmail`
 Emails are currently sent to 'martinkatamba@gmail.com', and 'amoswelike@gmail.com', feel free to add another
+
+### Visit hosted app
+- Backend: https://sendflaskmail20.herokuapp.com/sendmail 
+- Frontend:  https://ezyagricprice.web.app/
