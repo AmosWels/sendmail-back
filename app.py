@@ -14,8 +14,6 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
 mail = Mail(app)
-# 'martinkatamba@gmail.com',
-
 @app.route('/sendmail', methods=['POST'])
 def index():
     if request.method=='POST':
@@ -25,7 +23,7 @@ def index():
         price = data['price']
         email = data['email']
     try:
-        msg = Message('Hello customer care', sender = 'doep40077@gmail.com', recipients = ['amoswelike@gmail.com', email])
+        msg = Message('Hello customer care', sender = 'doep40077@gmail.com', recipients = ['martinkatamba@gmail.com', email])
         msg.body = "This is %s \n and i would like agro-chemicals at a price of %s" % (name, price)
         mail.send(msg)
         return jsonify({"message":"Your email has been Sent"})
