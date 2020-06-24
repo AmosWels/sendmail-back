@@ -9,6 +9,8 @@ verify_ssl = true
 flask = "*"
 flask-mail = "*"
 flask-cors = "*"
+install = "*"
+flask-restful = "*"
 
 [requires]
 python_version = "3.7"
